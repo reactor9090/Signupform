@@ -1,0 +1,186 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(font/Norse-Bold.otf);
+}
+
+* , *::after , *::before {
+    box-sizing: inherit;
+}
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.side-image {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 10%;
+    width: 35%;
+    height: 100%;
+    background-image: url(images/bk.avif);
+    background-position: center ;
+    background-size: cover;
+}
+
+.side-image .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 160px;
+    background-color: rgba(0,0,0,0.5) ;
+    font-size: 2rem;
+    color: #fff;
+    gap: 10px;
+}
+
+
+
+.logo img {
+    height: 100%;
+    padding: 1%;
+}
+
+.name {
+    font-family: norse-bold ;
+}
+
+.content {
+    width: 65%;
+    height: 100%;
+    /* padding: 0px 200px 0px 50px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    background-color: rgba(211, 211, 211, 0.185);
+}
+
+.head-text {
+    margin-left: 50px;
+    font-size: 1.5rem;  
+    font-weight: bold;
+
+    max-width: 900px;
+}
+
+form {
+    padding: 18px 50px;
+    width: 100%;
+    background-color: #fff;
+}
+
+form h2 {
+    font-size: 1.5rem;
+}
+
+
+.row {
+    display: flex;
+    margin-top: 30px;
+    gap: 60px;
+}
+
+.row label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.row input {
+    font-size: 1rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    padding: 15px 5px;
+    
+}
+
+
+
+.btn-wrapper {
+    width: 100%;
+    margin-left: 50px;
+    
+}
+
+.btn {
+    width: 250px;
+    height: 50px;
+    font-size: 1.2rem;
+    color: #fff;
+    border: none;
+    background-color: #596D48;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 2px rgba(128, 128, 128, 0.5);
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+
+.btn:hover {
+    background-color: #57604f;
+}
+
+.text-below {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+ .text-below a{
+    font-weight: 600;
+    text-decoration: none ;
+    color: #596D48;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+input[type="password"]:valid {
+    border: 1px solid green;
+}
+
+
+input[type="text"]:invalid {
+    border: 1px solid red;
+}
+
+input[type="text"]:valid {
+    border: 1px solid green;
+}
+
+
+input[type="email"]:invalid {
+    border: 1px solid red;
+}
+
+input[type="email"]:valid {
+    border: 1px solid green;
+}
+
+::placeholder {
+    opacity: 50%;
+    font-style: italic;
+}
+
+span {
+    font-style: italic;
+}
